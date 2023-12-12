@@ -1,0 +1,1 @@
+export { StaticticsLable } from "./StaticticsLable";

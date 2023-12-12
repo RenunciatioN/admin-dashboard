@@ -1,0 +1,43 @@
+
+@import "./normalize";
+@import "./variables";
+
+// font-family: 'Roboto Mono', monospace;
+
+body {
+    position: relative;
+    font-family: "TT Firs Neue";
+    font-size: 16px;
+    background-color: $background-base;
+    color: #fff;
+
+    min-height: 100vh;
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 78px;
+        bottom: 0;
+        right: 0;
+
+        background: url("/noise.png") lightgray 0% 0% / 50px 50px repeat;
+        mix-blend-mode: multiply;
+        filter: blur(0.5px);
+        z-index: -1;
+    }
+
+    &::-webkit-scrollbar {
+        background-color: black;
+        width: 6px;
+        padding: 0 2px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #383838;
+    }
+}
+
+div[role="status"] {
+    display: block;
+}

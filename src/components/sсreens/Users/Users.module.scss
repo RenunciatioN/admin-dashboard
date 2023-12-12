@@ -1,0 +1,36 @@
+.statistics {
+    display: flex;
+    gap: 20px;
+
+    margin-bottom: 20px;
+}
+
+.user-list {
+    margin-top: 20px;
+}
+
+.user-pagination-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 20px;
+
+    border-radius: 4px;
+    background: #0c1528;
+
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 0.8px;
+}
+
+.search {
+    background: radial-gradient(
+        75.7% 75.7% at 0% 0%,
+        rgba(51, 80, 231, 0.18) 46.99%,
+        rgba(51, 100, 231, 0.08) 67.91%,
+        rgba(51, 117, 231, 0.03) 79.94%,
+        rgba(51, 144, 231, 0) 100%
+    ),
+    #0c1528;
+}

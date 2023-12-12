@@ -1,0 +1,60 @@
+.layout {
+    position: relative;
+    overflow-x: hidden;
+
+    padding-bottom: 200px;
+    min-height: 100vh;
+
+    &::before {
+        content: "";
+
+        position: absolute;
+        top: 20%;
+        left: -10%;
+
+        width: 414px;
+        height: 414px;
+
+        border-radius: 414px;
+        opacity: 0.4;
+        background: radial-gradient(50% 50% at 50% 50%, #3350e7 53.13%, rgba(51, 144, 231, 0) 100%);
+
+        filter: blur(150px);
+
+        z-index: -1;
+    }
+    &::after {
+        content: "";
+
+        position: absolute;
+        top: 40%;
+        right: -10%;
+
+        width: 414px;
+        height: 414px;
+
+        border-radius: 414px;
+        opacity: 0.4;
+        background: radial-gradient(50% 50% at 50% 50%, #3350e7 53.13%, rgba(51, 144, 231, 0) 100%);
+
+        filter: blur(150px);
+
+        z-index: -1;
+    }
+}
+
+.content {
+    position: relative;
+    height: 100%;
+    // min-height: 100vh;
+    min-height: 60vh;
+
+    max-width: 1230px;
+    padding: 0 15px;
+    margin: 0 auto;
+    margin-top: 40px;
+
+    background-image: url(/images/login-dots.png);
+    background-repeat: no-repeat;
+    background-position: 100% 50px;
+}

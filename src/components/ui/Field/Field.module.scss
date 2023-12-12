@@ -1,0 +1,14 @@
+.field {
+    width: 100%;
+    padding: 10px 10px 10px 13px;
+    border-radius: 4px;
+    background: #0a1224;
+
+    color: #93a2c1;
+    font-weight: 400;
+    letter-spacing: 0.48px;
+
+    &::placeholder {
+        color: #93a2c1;
+    }
+}

@@ -1,0 +1,28 @@
+@import "assets/styles/variables";
+
+.keys {
+
+    .keys-list-header {
+        display: grid;
+        grid-template-columns: 180px 200px 150px 100px 200px 1fr;
+        gap: 20px;
+
+        padding: 20px;
+        margin-bottom: 4px;
+
+        border-radius: 4px;
+        background: #131d31;
+
+        span {
+            color: $text-secondary;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 0.36px;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.key {
+    font-family: 'Roboto Mono', monospace;
+}

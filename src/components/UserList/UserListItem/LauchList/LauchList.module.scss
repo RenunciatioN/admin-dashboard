@@ -1,0 +1,24 @@
+@import "assets/styles/variables";
+
+.launch-table-title {
+    display: grid;
+    grid-template-columns: 300px 300px 1fr;
+
+    padding: 20px;
+    margin-bottom: 4px;
+
+    border-radius: 4px;
+    background: #131d31;
+
+    color: $text-secondary;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.36px;
+    text-transform: uppercase;
+}
+
+.lauch-table {
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}

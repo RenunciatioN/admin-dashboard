@@ -1,0 +1,67 @@
+@import "assets/styles/variables";
+
+.modal {
+    width: 500px;
+    padding: 40px;
+
+    border-radius: 4px;
+    background: radial-gradient(
+            75.7% 75.7% at 0% 0%,
+            rgba(51, 80, 231, 0.18) 46.99%,
+            rgba(51, 100, 231, 0.08) 67.91%,
+            rgba(51, 117, 231, 0.03) 79.94%,
+            rgba(51, 144, 231, 0) 100%
+        ),
+        #0c1528;
+}
+
+.title {
+    margin-bottom: 14px;
+
+    color: #fff;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+}
+
+.inputBlock {
+    display: flex;
+    gap: 14px;
+    margin-bottom: 32px;
+}
+
+.submit {
+    width: 100%;
+    padding: 10px 0;
+
+    color: #161920;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+
+    border-radius: 6px;
+    background: $accent-color;
+    transition: opacity 0.2s ease-in-out;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+.select {
+    margin-bottom: 14px;
+}
+
+.lable {
+    display: block;
+    margin-bottom: 12px;
+
+    margin-bottom: 12px;
+    color: $text-secondary;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.36px;
+    text-transform: uppercase;
+}

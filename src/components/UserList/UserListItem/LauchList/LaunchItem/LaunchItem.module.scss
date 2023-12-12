@@ -1,0 +1,15 @@
+.item {
+    display: grid;
+    grid-template-columns: 300px 300px 1fr;
+    align-items: center;
+
+    padding: 10px 20px;
+    margin-bottom: 4px;
+
+    border-radius: 4px;
+    background: #131d31;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}

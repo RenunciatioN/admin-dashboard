@@ -1,0 +1,47 @@
+@import "assets/styles/variables";
+
+.settings {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.controlCard {
+    align-self: self-start;
+
+    width: 590px;
+
+    padding: 20px;
+
+    border-radius: 4px;
+    background: $background-base;
+
+    > button {
+        width: 100%;
+        margin-bottom: 6px;
+    }
+
+    & > * {
+        margin-bottom: 12px;
+    }
+}
+.cardLable {
+    display: block;
+    margin-bottom: 12px;
+
+    color: $text-secondary;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.36px;
+    text-transform: uppercase;
+}
+.flexBtns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skeleton {
+    display: flex;
+    justify-content: space-between;
+}

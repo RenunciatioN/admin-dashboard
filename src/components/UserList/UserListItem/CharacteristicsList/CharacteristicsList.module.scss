@@ -1,0 +1,33 @@
+@import "assets/styles/variables";
+
+.item {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    align-items: center;
+
+    padding: 20px;
+    width: 578px;
+
+    border-radius: 4px;
+    background: $bg-item;
+}
+
+.title {
+    color: $text-secondary;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.36px;
+    text-transform: uppercase;
+}
+
+.value {
+    color: #fff;
+    letter-spacing: 0.8px;
+}
+
+.list {
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4px;
+}

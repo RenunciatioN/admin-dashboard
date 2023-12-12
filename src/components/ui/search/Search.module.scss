@@ -1,0 +1,26 @@
+.search {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+
+    margin-bottom: 4px;
+    padding: 40px;
+
+    border-radius: 4px;
+
+    z-index: 2;
+}
+
+.search-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+
+    background-repeat: no-repeat;
+    background-position: left;
+
+    z-index: -1;
+}

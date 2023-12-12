@@ -1,0 +1,101 @@
+@import "assets/styles/variables.scss";
+
+.lable {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.searchBlock {
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 4px;
+    padding-right: 40px;
+
+    background: radial-gradient(
+            75.7% 75.7% at 0% 0%,
+            rgba(51, 80, 231, 0.18) 46.99%,
+            rgba(51, 100, 231, 0.08) 67.91%,
+            rgba(51, 117, 231, 0.03) 79.94%,
+            rgba(51, 144, 231, 0) 100%
+        ),
+        #0c1528;
+
+    .search {
+        flex: 1;
+    }
+}
+
+.btnWrapper {
+    padding-left: 40px;
+
+    border-left: 1px solid rgba(122, 231, 255, 0.1);
+}
+.generateBtn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 10px 18px;
+
+    color: #161920;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+
+    border-radius: 6px;
+    background: $accent-color;
+    transition: opacity 0.2s ease-in-out;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+.pagination-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding: 20px;
+  
+    border-radius: 4px;
+    background: #0c1528;
+
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 0.8px;
+}
+
+.keyList {
+    margin-top: 20px;
+    .keysItem {
+        background-color: #0c1528;
+
+        &:last-child {
+            margin-bottom: 4px;
+        }
+    }
+}
+
+.listHeader {
+    display: grid;
+    grid-template-columns: 180px 200px 150px 100px 200px 1fr;
+    gap: 20px;
+    align-items: center;
+
+    margin-bottom: 4px;
+    padding: 20px;
+
+    border-radius: 4px;
+    background: #0c1528;
+
+    span {
+        color: $text-secondary;
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 0.36px;
+        text-transform: uppercase;
+    }
+}

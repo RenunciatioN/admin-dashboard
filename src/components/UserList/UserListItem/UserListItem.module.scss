@@ -1,0 +1,103 @@
+@import "assets/styles/variables";
+
+.itemWrapper {
+    padding: 10px 20px;
+    background: $background-base;
+}
+
+.item {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 200px 200px 100px 1fr;
+    gap: 20px;
+}
+
+.actions {
+    display: flex;
+    gap: 12px;
+
+    i {
+        width: 1px;
+        background: rgba(122, 231, 255, 0.1);
+    }
+
+    .showBtn {
+        margin-left: auto;
+    }
+}
+
+.textItem {
+    color: #fff;
+    letter-spacing: 0.8px;
+}
+
+.banned {
+    display: flex;
+    align-items: center;
+
+    span {
+        padding: 4px 8px 3px 8px;
+
+        border-radius: 99px;
+        background: #ff7a7a;
+
+        color: #0c1528;
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 0.36px;
+        text-transform: uppercase;
+        user-select: none;
+    }
+}
+.showBtnRotate {
+    transform: rotate(180deg);
+}
+
+.item-info {
+    margin-top: 20px;
+    padding-top: 20px;
+
+    border-top: 1px solid rgba(122, 231, 255, 0.1);
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    &-title {
+        margin-bottom: 20px;
+
+        color: #fff;
+        font-size: 16px;
+        letter-spacing: 0.8px;
+    }
+}
+
+.characteristics,
+.keys {
+    margin-bottom: 20px;
+}
+
+.header-pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 4px;
+    padding: 20px;
+
+    border-radius: 4px;
+    background: #131d31;
+}
+.header-pagination-title {
+    letter-spacing: 0.8px;
+}
+
+
+.paginateSub {
+    display: flex;
+    gap: 20px;
+}
+
+.notif {
+    padding: 0;
+}

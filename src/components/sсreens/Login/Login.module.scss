@@ -1,0 +1,118 @@
+@import "assets/styles/variables";
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+}
+
+
+.wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+    overflow: hidden;
+
+    background-image: url("/images/login-dots.png");
+    background-repeat: no-repeat;
+    background-position: 67% 50%;
+
+    &::after {
+        content: "";
+
+        position: absolute;
+        top: 30%;
+        left: -10%;
+
+        width: 414px;
+        height: 414px;
+
+        border-radius: 414px;
+        opacity: 0.4;
+        background: radial-gradient(50% 50% at 50% 50%, #3350e7 53.13%, rgba(51, 144, 231, 0) 100%);
+
+        filter: blur(150px);
+    }
+    &::before {
+        content: "";
+
+        position: absolute;
+        bottom: 10%;
+        right: -10%;
+
+        width: 414px;
+        height: 414px;
+
+        border-radius: 414px;
+        opacity: 0.4;
+        background: radial-gradient(50% 50% at 50% 50%, #3350e7 53.13%, rgba(51, 144, 231, 0) 100%);
+
+        filter: blur(150px);
+    }
+
+    
+}
+
+.form {
+    padding: 40px;
+    width: 800px;
+
+    transform: translateY(-100px);
+
+    border-radius: 8px;
+    background: radial-gradient(
+            75.7% 75.7% at 0% 0%,
+            rgba(51, 80, 231, 0.18) 46.99%,
+            rgba(51, 100, 231, 0.08) 67.91%,
+            rgba(51, 117, 231, 0.03) 79.94%,
+            rgba(51, 144, 231, 0) 100%
+        ),
+        #0c1528;
+
+    background-image: url("/images/login-form-dots.png");
+    background-repeat: no-repeat;
+    background-position: left;
+
+    button {
+        width: 100%;
+        padding: 10px 0;
+
+        color: #161920;
+        text-align: center;
+        font-weight: 600;
+        letter-spacing: 0.8px;
+        text-transform: uppercase;
+
+        border-radius: 6px;
+        background: $primary-btn-bg;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 20px;
+
+        span {
+            color: #93a2c1;
+            font-size: 16px;
+            font-weight: 400;
+            letter-spacing: 0.48px;
+        }
+
+        input {
+            margin-top: 4px;
+        }
+    }
+
+    h1 {
+        margin-bottom: 20px;
+
+        color: $text-white;
+        font-size: 28px;
+        font-weight: 700;
+        letter-spacing: 1.4px;
+    }
+}
