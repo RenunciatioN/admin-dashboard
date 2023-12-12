@@ -95,7 +95,7 @@ const UserListItem: FC<{ user: IUser }> = ({ user }) => {
                         animate="visible"
                         exit="hidden"
                         transition={{
-                            duration: 0.3,
+                            duration: 0.5,
                         }}
                         className={styles["item-info"]}
                     >
